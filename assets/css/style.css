@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+body {
+    background-color: #1d1f21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Nunito Sans', Arial, sans-serif;
+    color: #fff;
+    
+}
+
+/* Couldn't figure out another way to remove type input arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.clock-container {
+    text-align: center;
+}
+
+.clock {
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+.alarm-set-indicator {
+    font-size: 16px;
+    color: #b5b5b5;
+    margin-bottom: 20px;
+}
+
+.alarm-form {
+    display: flex;
+    gap: 10px;
+}
+
+.hours, .minutes {
+    width: 50px;
+    padding: 5px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.set-alarm {
+    padding: 5px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.set-alarm:disabled {
+    background-color: #555;
+}
+
+.alarm-set-indicator {
+    font-size: 16px;
+    color: #b5b5b5;
+    margin-bottom: 20px;
+}
+
+.alarm-set-indicator.error {
+    color: #ff4d4d;
+}
