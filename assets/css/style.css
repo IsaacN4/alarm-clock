@@ -26,6 +26,7 @@ input::-webkit-inner-spin-button {
 .clock {
     font-size: 80px;
     margin-bottom: 20px;
+    font-variant: tabular-nums;
 }
 
 .alarm-set-indicator {
